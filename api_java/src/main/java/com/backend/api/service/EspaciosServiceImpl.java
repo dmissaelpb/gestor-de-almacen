@@ -22,11 +22,13 @@ public class EspaciosServiceImpl implements IEspaciosService {
 
     @Override  // crear
     public void agregarEspacios(Espacios espacios) {
+
         espaciosDao.save(espacios);
     }
 
     @Override
     public Optional<Espacios> findEspacios(Long id) {
+
         return (Optional<Espacios>) espaciosDao.findById(id);
     }
 
@@ -45,6 +47,7 @@ public class EspaciosServiceImpl implements IEspaciosService {
 
     @Override   // consultar
     public Espacios findById(Long id) {
+
         return espaciosDao.findById(id).orElse(null);
     }
 }

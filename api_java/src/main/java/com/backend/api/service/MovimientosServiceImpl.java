@@ -13,27 +13,36 @@ public class MovimientosServiceImpl implements  IMovimientosService {
     private IMovimientosDAO movimientosDAO;
 
 
+    @Override
     public List<Movimientos> findAll() {
-        return null;
+        return (List<Movimientos>) movimientosDAO.findAll();
     }
 
     @Override
     public void agregarMovimientos(Movimientos movimientos) {
-
+        movimientosDAO.save(movimientos);
     }
 
     @Override
-    public Movimientos findMovimientos(Long id) {
-        return null;
+    public Optional<Movimientos> findMovimientos(Long id) {
+        return (Optional<Movimientos>) movimientosDAO.findById(id);
     }
 
     @Override
     public Movimientos uptadeMovimientos(Movimientos movimientos) {
-        return null;
+        return (Movimientos) movimientosDAO.save(movimientos);
     }
 
     @Override
-    public void deleteTiposDeMateriales(Long id) {
-
+    public void deleteMoviminetos(Long id) {
+        movimientosDAO.deleteById(id);
     }
+
+
+
+    @Override
+    public Movimientos findById(Long id) {
+        return movimientosDAO.findById(id).orElse(null);
+    }
+
 }
