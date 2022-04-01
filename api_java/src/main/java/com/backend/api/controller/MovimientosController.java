@@ -3,7 +3,9 @@ package com.backend.api.controller;
 
 import com.backend.api.Mapper;
 import com.backend.api.entity.Espacios;
+import com.backend.api.entity.Inventarios;
 import com.backend.api.entity.Movimientos;
+import com.backend.api.entity.TiposDeMateriales;
 import com.backend.api.model.MMovimientos;
 import com.backend.api.service.IEspaciosService;
 import com.backend.api.service.IMovimientosService;
@@ -65,7 +67,15 @@ public class MovimientosController {
         movimientosService.deleteMoviminetos(id);
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
-
+    @PostMapping("/buscar_movimientos") //******
+    public ResponseEntity<?> findMovimientos(@RequestBody Movimientos movimientos) {
+        Movimientos movimientosDB = movimientosService.findById(movimientos.getId());
+        if (movimientosDB != null) {
+            return new ResponseEntity<>(movimientosDB, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
+        }
+    }
 
 
 

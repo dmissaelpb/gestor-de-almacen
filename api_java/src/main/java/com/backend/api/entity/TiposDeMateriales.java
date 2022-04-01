@@ -12,20 +12,21 @@ public class TiposDeMateriales implements  Serializable  {
 
     @Column(name="nombreProducto")
     private int nombreProducto ;
+
     @Column(name="cantidad")
     private boolean cantidad;
 
     @Column(name="reactividadQuimica")
     private boolean reactividadQuimica ;
 
-    @Column(name= "modifieDateTiposDeMateriales")
+    @Column(name= "modifiedDateTiposDeMateriales")
     @Temporal(TemporalType.DATE)
-    private Date modifieDateTiposDeMateriales;
+    private Date modifiedDateTiposDeMateriales;
+
     @PrePersist
     public void prePersist() {
-        modifieDateTiposDeMateriales = new Date();
+        modifiedDateTiposDeMateriales = new Date();
     }
-
 
     public Long getId() {
         return id;
@@ -43,7 +44,7 @@ public class TiposDeMateriales implements  Serializable  {
         this.nombreProducto = nombreProducto;
     }
 
-    public boolean isCantidad() {
+    public boolean getCantidad() {
         return cantidad;
     }
 
@@ -51,7 +52,7 @@ public class TiposDeMateriales implements  Serializable  {
         this.cantidad = cantidad;
     }
 
-    public boolean isReactividadQuimica() {
+    public boolean getReactividadQuimica() {
         return reactividadQuimica;
     }
 
@@ -59,11 +60,11 @@ public class TiposDeMateriales implements  Serializable  {
         this.reactividadQuimica = reactividadQuimica;
     }
 
-    public Date getModifieDateTiposDeMateriales() {
-        return modifieDateTiposDeMateriales;
+    public Date getModifiedDateTiposDeMateriales() {
+        return modifiedDateTiposDeMateriales;
     }
 
-    public void setModifieDateTiposDeMateriales(Date modifieDateTiposDeMateriales) {
-        this.modifieDateTiposDeMateriales = modifieDateTiposDeMateriales;
+    public void setModifiedDateTiposDeMateriales(Date modifiedDateTiposDeMateriales) {
+        this.modifiedDateTiposDeMateriales = modifiedDateTiposDeMateriales;
     }
 }

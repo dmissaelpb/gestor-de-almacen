@@ -55,9 +55,9 @@ public class UsuarioController {
         if(usuarioDb!=null) {
             List<Usuario> usuarios = new ArrayList<>();
             usuarios.add(usuarioDb);
-            List<MUsuario> mUsuarios = new ArrayList<>();
-            mUsuarios = Mapper.convertirLista(usuarios);
-            return new ResponseEntity<>(mUsuarios, HttpStatus.OK);
+            List<MUsuario> Usuarios = new ArrayList<>();
+            Usuarios = Mapper.convertirLista(usuarios);
+            return new ResponseEntity<>(Usuarios, HttpStatus.OK);
         }else {
             return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
         }

@@ -1,5 +1,6 @@
 package com.backend.api.service;
 
+import com.backend.api.entity.Roles;
 import com.backend.api.entity.TiposDeMateriales;
 
 import java.util.List;
@@ -14,5 +15,8 @@ public interface ITiposDeMaterialesService {
 
     public TiposDeMateriales uptadeTiposDeMateriales(TiposDeMateriales tiposDeMateriales); // actualizar
     public void deleteTiposDeMateriales(Long id); // eliminar
+
+    public TiposDeMateriales findById (Long id);
+
 
 }
