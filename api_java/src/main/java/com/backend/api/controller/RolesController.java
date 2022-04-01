@@ -34,7 +34,9 @@ public class RolesController {
                 Roles rolesDB = null;
                 rolesDB = rolesService.findById(id);
                 if(rolesDB != null) {
-
+                    rolesDB.setOperarios(roles.getOperarios());
+                    rolesDB.setAdministrador(roles.getAdministrador());
+                    rolesDB.setUsuarios(roles.getUsuarios());
                     return new ResponseEntity<>(rolesDB, HttpStatus.OK);
                 }else {
                     return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
@@ -66,10 +68,5 @@ public class RolesController {
             return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
         }
     }
-
-
-
-
-
 
     }

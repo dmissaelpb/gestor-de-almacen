@@ -39,8 +39,10 @@ public class TiposDeMaterialesImpl implements ITiposDeMaterialesService {
         tiposDeMaterialesDAO.deleteById(id);
     }
 
-
-
+    @Override
+    public TiposDeMateriales findById(Long id) {
+        return null;
+    }
 
 
 }

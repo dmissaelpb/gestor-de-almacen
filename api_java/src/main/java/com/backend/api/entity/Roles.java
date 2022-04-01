@@ -18,10 +18,6 @@ public class Roles implements  Serializable {
 
     @Column(name="operarios")
     private boolean operarios;
-/*
-    @Column(name= "create_at")
-    @Temporal(TemporalType.DATE)
-    private Date createAt;*/
 
     @PrePersist
     public Long getId() {
@@ -32,7 +28,7 @@ public class Roles implements  Serializable {
         this.id = id;
     }
 
-    public boolean isAdministrador() {
+    public boolean getAdministrador() {
         return administrador;
     }
 
@@ -40,7 +36,7 @@ public class Roles implements  Serializable {
         this.administrador = administrador;
     }
 
-    public boolean isUsuarios() {
+    public boolean getUsuarios() {
         return usuarios;
     }
 
@@ -48,7 +44,7 @@ public class Roles implements  Serializable {
         this.usuarios = usuarios;
     }
 
-    public boolean isOperarios() {
+    public boolean getOperarios() {
         return operarios;
     }
 
