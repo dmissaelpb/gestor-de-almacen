@@ -12,5 +12,7 @@ public interface IRolesService {
     public Optional<Roles> findRoles(Long id); // consultar x id
 
     public Roles uptadeRoles(Roles roles); // actualizar
-    public void deleteRoles(Long id); // eliminar
+    public void deleteRoles (Long id); // eliminar
+
+    public Roles findById (Long id);
 }

@@ -19,6 +19,7 @@ public class RolesServiceImpl implements  IRolesService{
 
     @Override
     public List<Roles> findAll() {
+
         return (List<Roles>) rolesDAO.findAll();
     }
 
@@ -41,6 +42,11 @@ public class RolesServiceImpl implements  IRolesService{
     public void deleteRoles(Long id) {
         rolesDAO.deleteById(id);
 
+    }
+
+    @Override
+    public Roles findById(Long id) {
+        return  rolesDAO.findById(id).orElse(null);
     }
 
 }

@@ -46,10 +46,10 @@ public class EspaciosServiceImpl implements IEspaciosService {
     }
 
     @Override   // consultar
-    public Espacios findById(Long id) {
+public Espacios findById(Long id) {
 
-        return espaciosDao.findById(id).orElse(null);
-    }
+    return espaciosDao.findById(id).orElse(null);
+}
 }
 
 
