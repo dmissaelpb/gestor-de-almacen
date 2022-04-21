@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="92fb0d71-e21f-445c-866f-6881aab2aed5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/dao/IInventariosDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/service/IMovimientosService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/service/IRolesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/service/MovimientosServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/service/RolesServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/controller/MovimientosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/controller/MovimientosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/controller/RolesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/controller/RolesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/controller/TiposDeMaterialesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/controller/TiposDeMaterialesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/controller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/dao/IRolesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/dao/IRolesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/model/MInventarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/model/MInventarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/service/EspaciosServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/api_java/src/main/java/com/backend/api/service/EspaciosServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/api_java" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26kggusbfwnyyqJNrlWSVfFydGQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="BUNDLED" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="appi example" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <module name="appi example" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92fb0d71-e21f-445c-866f-6881aab2aed5" name="Changes" comment="" />
+      <created>1647973112338</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647973112338</updated>
+    </task>
+    <servers />
+  </component>
+</project>
