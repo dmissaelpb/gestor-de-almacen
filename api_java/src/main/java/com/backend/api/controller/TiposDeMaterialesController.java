@@ -18,7 +18,6 @@ public class TiposDeMaterialesController {
     @Autowired
     private ITiposDeMaterialesService tiposDeMaterialesService;
 
-
     @GetMapping("/tiposDeMateriales")
     @ResponseStatus(HttpStatus.OK)
     public List<TiposDeMateriales>
@@ -26,7 +25,7 @@ public class TiposDeMaterialesController {
         return tiposDeMaterialesService.findAll();
     }
 
-    @PutMapping("/tiposDeMateriales/update/{id}")  //*********************     coregir segmento de variables
+    @PutMapping("/tiposDeMateriales/update/{id}")
     public ResponseEntity<?> updateTiposDeMaterial(@PathVariable
      (value="id")Long id, @RequestBody TiposDeMateriales tiposDeMateriales){
         TiposDeMateriales tiposDeMaterialesDB = null;

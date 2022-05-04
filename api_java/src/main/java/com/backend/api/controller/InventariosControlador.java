@@ -24,7 +24,7 @@ public class InventariosControlador {
         return inventariosService.findAll();
     }
 
-    @PutMapping("/inventarios/update/{id}")  //*********************     coregir segmento de variables
+    @PutMapping("/inventarios/update/{id}")
     public ResponseEntity<?> updateInventario(@PathVariable
    (value="id")Long id, @RequestBody Inventarios inventarios){
         Inventarios inventariosDB = null;
