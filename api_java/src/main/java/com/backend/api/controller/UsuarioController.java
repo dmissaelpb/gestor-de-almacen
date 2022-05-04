@@ -93,13 +93,13 @@ public class UsuarioController {
         }
     }
 
-    @DeleteMapping("/eliminar/{id}") //***************
+    @DeleteMapping("/usuarios/eliminar/{id}") //***************
     public ResponseEntity<Void> deleteUsuario(@PathVariable(value="id")Long id){
         usuarioService.deleteUsuario(id);
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
 
-    @PostMapping("eliminar_post")
+    @PostMapping("/usuarios/eliminar_post")
     public ResponseEntity<Void> deleteUsuarioPost(@RequestBody Usuario usuario){
         if(usuarioService.findUsuario(usuario)!=null) {
             usuarioService.deleteUsuario(usuario);
