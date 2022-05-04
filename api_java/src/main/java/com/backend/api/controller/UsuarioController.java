@@ -27,7 +27,7 @@ public class UsuarioController {
         return usuarioService.findAll();
     }
 
-    @PostMapping("/buscar_usuario") //****** unica de usuario
+    @PostMapping("/usuario/buscar") //****** unica de usuario
     public ResponseEntity<?> findUsuario(@RequestBody Usuario usuario){
         Usuario usuarioDb = usuarioService.findUsuario(usuario);
         if(usuarioDb!=null) {
@@ -63,7 +63,7 @@ public class UsuarioController {
         }
     }
 
-    @PutMapping("/update/{id}")  //*********************
+    @PutMapping("/usuario/update/{id}")  //*********************
     public ResponseEntity<?> updateUsuario(@PathVariable(value="id")Long id, @RequestBody Usuario usuario){
         Usuario usuarioDB = null;
         usuarioDB = usuarioService.findById(id);

@@ -23,7 +23,7 @@ public class Usuario implements Serializable {
     @Column(length = 20000)
     private String foto;
 
-    @Column(length = 3)
+    @Column(length = 30)
     private String rol;
 
     private int activo;

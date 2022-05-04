@@ -27,4 +27,5 @@ public interface IUsuarioService {
 
     public Usuario findByIdSQL(Long id);
 
+
 }
